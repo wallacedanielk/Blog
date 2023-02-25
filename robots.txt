@@ -1,1 +1,1 @@
-Sitemap: https://wallacedanielk.github.io/Blog/sitemap.xml
+Sitemap: https://github.com/wallacedanielk/Blog/sitemap.xml
