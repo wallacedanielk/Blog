@@ -1,0 +1,11 @@
+---
+title: "Welcome To My Blog"
+author: "Daniel Wallace"
+date: "2023-02-20"
+categories: [news]
+image: "cogs.jpg"
+---
+
+This is the first post in my Quarto blog for my machine learning class project. Welcome!
+
+My first step is to get this blog working and published to github.  So far I have managed to download Quarto, preview the blog and make some minor changes, my next steps will be to create my own blog posts and publish this to github.  Wish me luck!
