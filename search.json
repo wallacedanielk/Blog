@@ -2,7 +2,7 @@
   {
     "objectID": "posts/i-think-it-worked/index.html",
     "href": "posts/i-think-it-worked/index.html",
-    "title": "Welcome To My Blog",
+    "title": "Publish to GitHub and Beyond",
     "section": "",
     "text": "Well, if you are reading this post I did it!!\nI created a Quarto Blog, added Blog pages, and published this to GitHub, and added some CI/CD using Github actions to automate my build and deployment process. Now it is on to the next part of the project. Lets go clean some data!"
   },
@@ -32,6 +32,6 @@
     "href": "index.html",
     "title": "Machine Learning Project",
     "section": "",
-    "text": "Its All About the Data\n\n\n\n\n\n\n\nData\n\n\nData Science\n\n\nEmployment\n\n\n\n\n\n\n\n\n\n\n\nFeb 22, 2023\n\n\nDaniel Wallace\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\ngithub\n\n\n\n\n\n\n\n\n\n\n\nFeb 21, 2023\n\n\nDaniel Wallace\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nFeb 20, 2023\n\n\nDaniel Wallace\n\n\n\n\n\n\nNo matching items"
+    "text": "Its All About the Data\n\n\n\n\n\n\n\nData\n\n\nData Science\n\n\nEmployment\n\n\n\n\n\n\n\n\n\n\n\nFeb 22, 2023\n\n\nDaniel Wallace\n\n\n\n\n\n\n  \n\n\n\n\nPublish to GitHub and Beyond\n\n\n\n\n\n\n\ngithub\n\n\n\n\n\n\n\n\n\n\n\nFeb 21, 2023\n\n\nDaniel Wallace\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nFeb 20, 2023\n\n\nDaniel Wallace\n\n\n\n\n\n\nNo matching items"
   }
 ]
