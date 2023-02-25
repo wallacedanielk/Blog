@@ -1,5 +1,5 @@
 ---
-title: "Welcome To My Blog"
+title: "Publish to GitHub and Beyond"
 author: "Daniel Wallace"
 date: "2023-02-21"
 categories: [github]
