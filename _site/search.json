@@ -1,31 +1,17 @@
 [
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Daniel Wallace",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Machine Learning Project",
     "section": "",
     "text": "Its All About the Data\n\n\n\n\n\n\n\nData\n\n\nData Science\n\n\nEmployment\n\n\n\n\n\n\n\n\n\n\n\nFeb 21, 2023\n\n\nDaniel Wallace\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nFeb 20, 2023\n\n\nDaniel Wallace\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this blog"
-  },
-  {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "The Beginning",
-    "section": "",
-    "text": "this is blog number one"
-  },
-  {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
-    "section": "",
-    "text": "This is the first post in my Quarto blog for my machine learning class project. Welcome!\n\nMy first step is to get this blog working and published to github. So far I have managed to download Quarto, preview the blog and make some minor changes, my next steps will be to create my own blog posts and publish this to github. Wish me luck!"
   },
   {
     "objectID": "posts/the-beginning/index.html",
