@@ -1,7 +1,7 @@
 ---
 title: "Its All About the Data"
 author: "Daniel Wallace"
-date: "2023-02-21"
+date: "2023-02-22"
 categories: [Data, Data Science, Employment]
 image: "data.jpg"
 ---
