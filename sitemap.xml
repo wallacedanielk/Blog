@@ -2,22 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://github.com/wallacedanielk/Blog/posts/i-think-it-worked/index.html</loc>
-    <lastmod>2023-02-25T16:37:12.242Z</lastmod>
+    <lastmod>2023-02-26T17:02:52.040Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/wallacedanielk/Blog/posts/feature_selection/index.html</loc>
+    <lastmod>2023-02-26T17:02:52.696Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/wallacedanielk/Blog/posts/the-first-dataset/index.html</loc>
-    <lastmod>2023-02-25T16:37:13.046Z</lastmod>
+    <lastmod>2023-02-26T17:02:53.000Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/wallacedanielk/Blog/posts/the-beginning/index.html</loc>
-    <lastmod>2023-02-25T16:37:13.382Z</lastmod>
+    <lastmod>2023-02-26T17:02:53.288Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/wallacedanielk/Blog/about.html</loc>
-    <lastmod>2023-02-25T16:37:13.718Z</lastmod>
+    <lastmod>2023-02-26T17:02:53.564Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/wallacedanielk/Blog/index.html</loc>
-    <lastmod>2023-02-25T16:37:14.106Z</lastmod>
+    <lastmod>2023-02-26T17:02:53.908Z</lastmod>
   </url>
 </urlset>
