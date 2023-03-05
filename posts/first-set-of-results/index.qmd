@@ -2,7 +2,7 @@
 title: "Classification and Results"
 author: "Daniel Wallace"
 date: "2023-02-28"
-categories: [Machine Learning, Feature Selection]
+categories: [Machine Learning, Classification]
 image: "results.jpg"
 format:
     html:
