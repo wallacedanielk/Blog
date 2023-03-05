@@ -28,6 +28,13 @@
     "text": "This is the first post in my Quarto blog for my machine learning class project. Welcome!\nMy first step is to get this blog working and published to github. So far I have managed to download Quarto, preview the blog and make some minor changes, my next steps will be to create my own blog posts and publish this to github. Wish me luck!"
   },
   {
+    "objectID": "posts/first-set-of-results/index.html",
+    "href": "posts/first-set-of-results/index.html",
+    "title": "Classification and Results",
+    "section": "",
+    "text": "The data is cleaned, the features are selected, now what? Well, I think it is time to get some results! For this first set of results, we are doing something simple. We are trying to predict employee attrition. This first attempt just compares five models to see which models give the best results so that we can move on to more questions. I am comparing the following classifiers:\n\n\n\nLogistic Regression\n\n\nSupport Vector Machines\n\n\nDecision Trees\n\n\nK-Nearest Neighbor\n\n\nRandom Forest\n\n\n\nTo train these models, I am using Python’s Scikitlearn package. I am using 4 metrics to compare the results:\n\n\n\nAcuracy\n\n\nPrecision\n\n\nRecall\n\n\nf_score\n\n\n\nAnd the Results are in:\n\n\n\n\n\n\n\n\n\n\nLogistic Regression\n\n\nSVM\n\n\nDecision Tree\n\n\nKNN\n\n\nRandom Forest\n\n\n\n\n\n\naccuracy \n\n\n0.828\n\n\n0.841 \n\n\n0.839 \n\n\n0.844 \n\n\n0.855 \n\n\n\n\nprecision\n\n\n0.470 \n\n\n0.511 \n\n\n0.5 \n\n\n0.556 \n\n\n0.706 \n\n\n\n\nrecall\n\n\n 0.550\n\n\n0.324 \n\n\n0.096 \n\n\n0.141 \n\n\n0.170 \n\n\n\n\nf_score \n\n\n0.510 \n\n\n0.397 \n\n\n0.165 \n\n\n0.225 \n\n\n0.273"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -39,6 +46,6 @@
     "href": "index.html",
     "title": "Machine Learning Project",
     "section": "",
-    "text": "Feature Selection\n\n\n\n\n\n\n\nMachine Learning\n\n\nFeature Selection\n\n\n\n\n\n\n\n\n\n\n\nFeb 26, 2023\n\n\nDaniel Wallace\n\n\n\n\n\n\n  \n\n\n\n\nIts All About the Data\n\n\n\n\n\n\n\nData\n\n\nData Science\n\n\nEmployment\n\n\n\n\n\n\n\n\n\n\n\nFeb 22, 2023\n\n\nDaniel Wallace\n\n\n\n\n\n\n  \n\n\n\n\nPublish to GitHub and Beyond\n\n\n\n\n\n\n\ngithub\n\n\n\n\n\n\n\n\n\n\n\nFeb 21, 2023\n\n\nDaniel Wallace\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nFeb 20, 2023\n\n\nDaniel Wallace\n\n\n\n\n\n\nNo matching items"
+    "text": "Classification and Results\n\n\n\n\n\n\n\nMachine Learning\n\n\nFeature Selection\n\n\n\n\n\n\n\n\n\n\n\nFeb 28, 2023\n\n\nDaniel Wallace\n\n\n\n\n\n\n  \n\n\n\n\nFeature Selection\n\n\n\n\n\n\n\nMachine Learning\n\n\nFeature Selection\n\n\n\n\n\n\n\n\n\n\n\nFeb 26, 2023\n\n\nDaniel Wallace\n\n\n\n\n\n\n  \n\n\n\n\nIts All About the Data\n\n\n\n\n\n\n\nData\n\n\nData Science\n\n\nEmployment\n\n\n\n\n\n\n\n\n\n\n\nFeb 22, 2023\n\n\nDaniel Wallace\n\n\n\n\n\n\n  \n\n\n\n\nPublish to GitHub and Beyond\n\n\n\n\n\n\n\ngithub\n\n\n\n\n\n\n\n\n\n\n\nFeb 21, 2023\n\n\nDaniel Wallace\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nFeb 20, 2023\n\n\nDaniel Wallace\n\n\n\n\n\n\nNo matching items"
   }
 ]
