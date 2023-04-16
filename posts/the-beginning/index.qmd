@@ -26,12 +26,12 @@ case is yes or no, where yes implies that the employee has left the organization
 ’yes’ result is 84% of the data and the ’no’ result is 16%.
 </p>
 
-First we are going to import all required libraries for this analysis:
-![](importImage.png){width=80%}
 
-To load the dataset you can read it in using Pandas, I call my data variable attritionData. Before I get started I split my data into a dataset of features and an array of labels. 
+![First we are going to import all required libraries for this analysis](importImage.png){width=80%}
 
-![](dataSplit.png){width=80%}
+To load the dataset you can read it in using Pandas, I call my data variable attritionData.  
+
+![Before I get started I split my data into a dataset of features and an array of labels.](dataSplit.png){width=80%}
 
 
 <h3>Time for a little housekeeping</h3>
@@ -51,7 +51,7 @@ To load the dataset you can read it in using Pandas, I call my data variable att
 
  ![The dataset was split into training as testing data using a 70/30 split. ](dataSplitTestTrain.png){width=80%}
 
- ![The training data was resampled using borderline SMOTE. ](resample.png){width=80%}
+
 
 
 
@@ -60,12 +60,24 @@ The testing data was not resampled to provide a clean test dataset to test the a
 
 
 <h3>Selecting the right features</h3>
-<p>&emsp; Columns were dropped based on feature importances with a threshold of 0.015</p>
+
+ ![Columns were dropped based on feature importances with a threshold of 0.015 ](importances.png){width=80%}
+
+![The above section of code keeps only the 'important' columns](ColToKeep.png){width=80%}
 
 <h3>Creating new data from old data</h3>
-<p>&emsp; SMOTE </p>
+
+ ![The training data was resampled using borderline SMOTE. ](resample.png){width=80%}
+
+
 
 <h3>Classifying the data</h3>
+ 
+
+ ![We are using various machine learning models,  here we intialize the classifier and fit the models. ](classifierFit.png){width=80%}
+
+ ![Now we make predictions](predictions.png){width=80%}
+
 
 <h3>The Wrap Up</h3>
 </div>
