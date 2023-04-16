@@ -152,51 +152,75 @@ Why are we here?
   Every employer, at one point or another, faces employee turnover. Given the cost of recruiting a new employee, on-boarding, training, and the learning curve that a new employee faces to be able to bring value to their new position, being able to prevent the loss of a seasoned employee holds value to the employer.
 </p>
 <p>
-  We are going to look at a publicily availble dataset that is popular on Kaggle (https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset.) and walk through preprocessing, feature selection, oversampling, and finally classification of the label class.
+  We are going to look at a publicily availble dataset that is popular on Kaggle (<a href="https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset"> Available Here </a>) and walk through preprocessing, feature selection, oversampling, and finally classification of the label class.
 </p>
 <h3 class="anchored">
 It is all about the data
 </h3>
 <p>
+</p><p>There is a little bit of prep that needs to be done before we dig into the data and code. If you would like to follow along, here is a link to the python environment file that I used in this research: <a href="https://github.com/wallacedanielk/fileHosting/blob/main/environment.yml">Here is my environment File.</a></p>
   The IBM HR Attrition data set is a fictional dataset created by IBM scientists. This dataset has been used in multiple papers and in various notebooks on the Kaggle competition website. The attrition dataset has 1470 rows, with 35 columns . The label in this case is yes or no, where yes implies that the employee has left the organization and no implies that they stayed. The ’yes’ result is 84% of the data and the ’no’ result is 16%.
-</p>
+<p></p>
+<p>First we are going to import all required libraries for this analysis: <img src="importImage.png" class="img-fluid" style="width:80.0%"></p>
+<p>To load the dataset you can read it in using Pandas, I call my data variable attritionData. Before I get started I split my data into a dataset of features and an array of labels.</p>
+<p><img src="dataSplit.png" class="img-fluid" style="width:80.0%"></p>
 <h3 class="anchored">
 Time for a little housekeeping
 </h3>
-<ul>
-<li>
-Labels were encoded using 1 for ‘yes’ and 0 for ‘no’
-</li>
-<li>
-Columns ‘Over18’, ‘EmployeeCount’, ‘Standard Hours’ were dropped due to all having the same value for all of the records in the dataset.
-</li>
-<li>
-The Column ‘EmployeeNumber’ was dropped due to it being a unique identifier for each record and offers no value to the model.
-</li>
-<li>
-This dataset did not have any missing value, so no techniques for missing data were used.
-</li>
-<li>
-All categorical variables were one-hot encoded using the ‘dummies’ Pandas package in Python.
-</li>
-<li>
-The continous features were scaled using standard scalar from Scikit Learn package in Python
-</li>
-<li>
-Columns were dropped based on feature importances with a threshold of 0.015
-</li>
-<li>
-The dataset was split into training as testing data using a 70/30 split.
-</li>
-<li>
-The training data was resampled using borderline SMOTE. The testing data was not resampled to provide a clean test dataset to test the algorithms against.
-</li>
-</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="encode.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<p></p><figcaption class="figure-caption">Labels are encoded using 1 for ‘yes’ and 0 for ‘no’</figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="removeColumns.png" class="img-fluid figure-img" style="width:30.0%"></p>
+<p></p><figcaption class="figure-caption">Columns ‘Over18’, ‘EmployeeCount’, ‘Standard Hours’ were dropped due to having the same value for all of the records in the dataset.The Column ‘EmployeeNumber’ was dropped due to it being a unique identifier for each record and offers no value to the model.</figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="missing.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<p></p><figcaption class="figure-caption">This dataset did not have any missing value, so no techniques for missing data were used. The above code will verify that.</figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="oneHot.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<p></p><figcaption class="figure-caption">All categorical variables were one-hot encoded using the ‘dummies’ Pandas package in Python.</figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="scaleMethod.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<p></p><figcaption class="figure-caption">The continous features were scaled using standard scalar from Scikit Learn package in Python. I implement this in a method that we will call on the data.</figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="scaleMethodUsed.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<p></p><figcaption class="figure-caption">Then you call the method that we created on the data, and get the columns for later use.</figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="dataSplitTestTrain.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<p></p><figcaption class="figure-caption">The dataset was split into training as testing data using a 70/30 split.</figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="resample.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<p></p><figcaption class="figure-caption">The training data was resampled using borderline SMOTE.</figcaption><p></p>
+</figure>
+</div>
+<p>The testing data was not resampled to provide a clean test dataset to test the algorithms against.</p>
 <h3 class="anchored">
 Selecting the right features
 </h3>
 <p>
-  Above I briefly talked about dropping columns and selecting features, here is where we will dive into that in a little more detail.
+  Columns were dropped based on feature importances with a threshold of 0.015
 </p>
 <h3 class="anchored">
 Creating new data from old data
