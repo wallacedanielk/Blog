@@ -78,7 +78,17 @@ The testing data was not resampled to provide a clean test dataset to test the a
 
  ![Now we make predictions](predictions.png){width=80%}
 
+<h3>How do we know if the predictions are Good?</h3>
+ 
+ ![We use precision, recall, f1-score, and accuracy](metrics.png){width=80%}
 
+  ![The above metrics are calculated using a contingency table. Here is an example of one using our Logistic Regression Predictions](twoByTwo.png){width=80%}
+
+  ![Another metric that you can use is the Area under the ROC Curve](ROC.png){width=80%}
+
+![The code above produces a grphic like this one](ROCCurve.png){width=80%}
+
+ 
 <h3>The Wrap Up</h3>
 </div>
 
