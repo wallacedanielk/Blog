@@ -161,9 +161,19 @@ It is all about the data
 </p><p>There is a little bit of prep that needs to be done before we dig into the data and code. If you would like to follow along, here is a link to the python environment file that I used in this research: <a href="https://github.com/wallacedanielk/fileHosting/blob/main/environment.yml">Here is my environment File.</a></p>
   The IBM HR Attrition data set is a fictional dataset created by IBM scientists. This dataset has been used in multiple papers and in various notebooks on the Kaggle competition website. The attrition dataset has 1470 rows, with 35 columns . The label in this case is yes or no, where yes implies that the employee has left the organization and no implies that they stayed. The ’yes’ result is 84% of the data and the ’no’ result is 16%.
 <p></p>
-<p>First we are going to import all required libraries for this analysis: <img src="importImage.png" class="img-fluid" style="width:80.0%"></p>
-<p>To load the dataset you can read it in using Pandas, I call my data variable attritionData. Before I get started I split my data into a dataset of features and an array of labels.</p>
-<p><img src="dataSplit.png" class="img-fluid" style="width:80.0%"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="importImage.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<p></p><figcaption class="figure-caption">First we are going to import all required libraries for this analysis</figcaption><p></p>
+</figure>
+</div>
+<p>To load the dataset you can read it in using Pandas, I call my data variable attritionData.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="dataSplit.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<p></p><figcaption class="figure-caption">Before I get started I split my data into a dataset of features and an array of labels.</figcaption><p></p>
+</figure>
+</div>
 <h3 class="anchored">
 Time for a little housekeeping
 </h3>
@@ -209,28 +219,46 @@ Time for a little housekeeping
 <p></p><figcaption class="figure-caption">The dataset was split into training as testing data using a 70/30 split.</figcaption><p></p>
 </figure>
 </div>
+<p>The testing data was not resampled to provide a clean test dataset to test the algorithms against.</p>
+<h3 class="anchored">
+Selecting the right features
+</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="importances.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<p></p><figcaption class="figure-caption">Columns were dropped based on feature importances with a threshold of 0.015</figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="ColToKeep.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<p></p><figcaption class="figure-caption">The above section of code keeps only the ‘important’ columns</figcaption><p></p>
+</figure>
+</div>
+<h3 class="anchored">
+Creating new data from old data
+</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="resample.png" class="img-fluid figure-img" style="width:80.0%"></p>
 <p></p><figcaption class="figure-caption">The training data was resampled using borderline SMOTE.</figcaption><p></p>
 </figure>
 </div>
-<p>The testing data was not resampled to provide a clean test dataset to test the algorithms against.</p>
-<h3 class="anchored">
-Selecting the right features
-</h3>
-<p>
-  Columns were dropped based on feature importances with a threshold of 0.015
-</p>
-<h3 class="anchored">
-Creating new data from old data
-</h3>
-<p>
-  SMOTE
-</p>
 <h3 class="anchored">
 Classifying the data
 </h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="classifierFit.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<p></p><figcaption class="figure-caption">We are using various machine learning models, here we intialize the classifier and fit the models.</figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="predictions.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<p></p><figcaption class="figure-caption">Now we make predictions</figcaption><p></p>
+</figure>
+</div>
 <h3 class="anchored">
 The Wrap Up
 </h3>
