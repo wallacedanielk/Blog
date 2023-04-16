@@ -5,4 +5,50 @@ date: "2023-04-10"
 categories: [machine Learning, Python]
 image: "cogs.jpg"
 ---
+<div>
+<h3> Why are we here? </h3>
+<p>
+&emsp; Every employer, at one point or another, faces employee turnover. Given the cost of recruiting a new employee,
+on-boarding, training, and the learning curve that a new employee faces to be able to bring value to their new position,
+being able to prevent the loss of a seasoned employee holds value to the employer.
+</p>
+<p>
+&emsp; We are going to look at a publicily availble dataset that is popular on Kaggle (https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset.) and walk through preprocessing, feature selection, oversampling, and finally classification of the label class. 
+</p>
+<h3>It is all about the data </h3>
+<p>
+&emsp; The IBM HR Attrition data set is a fictional dataset created by IBM scientists. This dataset has been used in multiple papers and in various
+notebooks on the Kaggle competition website. The attrition dataset has 1470 rows, with 35 columns . The label in this
+case is yes or no, where yes implies that the employee has left the organization and no implies that they stayed. The
+’yes’ result is 84% of the data and the ’no’ result is 16%.
+</p>
+<h3>Time for a little housekeeping</h3>
+
+<ul>
+<li>Labels were encoded using 1 for 'yes' and 0 for 'no' </li>
+<li> Columns 'Over18', 'EmployeeCount', 'Standard Hours' were dropped due to all having the same value for all of the records in the dataset. </li>
+<li>The Column 'EmployeeNumber' was dropped due to it being a unique identifier for each record and offers no value to the model. </li>
+<li>This dataset did not have any missing value, so no techniques for missing data were used. </li>
+<li> All categorical variables were one-hot encoded using the 'dummies' Pandas package in Python. </li>
+<li> The continous features were scaled using standard scalar from Scikit Learn package in Python</li>
+<li> Columns were dropped based on feature importances with a threshold of 0.015</li>
+<li>The dataset was split into training as testing data using a 70/30 split. </li>
+<li> The training data was resampled using borderline SMOTE. The testing data was not resampled to provide a clean test dataset to test the algorithms against. </li>
+</ul>
+
+<h3>Selecting the right features</h3>
+<p>&emsp; Above I briefly talked about dropping columns and selecting features, here is where we will dive into that in a little more detail.</p>
+
+<h3>Creating new data from old data</h3>
+<p>&emsp; SMOTE </p>
+
+<h3>Classifying the data</h3>
+
+<h3>The Wrap Up</h3>
+</div>
+
+
+
+
+
 

@@ -2,10 +2,6 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/feature_selection/index.html",
-      "/posts/first-set-of-results/index.html",
-      "/posts/the-first-dataset/index.html",
-      "/posts/i-think-it-worked/index.html",
       "/posts/the-beginning/index.html"
     ]
   }
